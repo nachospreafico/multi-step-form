@@ -1,0 +1,86 @@
+@media only screen and (max-width: 480px) {
+  #step-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-family: UbuntuMedium;
+  }
+
+  #step-4 h1 {
+    margin: 0;
+  }
+
+  #step-4 > p {
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+
+  .summary-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #f7faff;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 5%;
+  }
+
+  .plan-summary {
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+    width: 100%;
+    border-bottom: hsl(229, 24%, 87%) solid 1px;
+  }
+
+  .plan-title {
+    color: hsl(213, 96%, 18%);
+    font-family: UbuntuBold;
+  }
+
+  .change-btn {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .plan p {
+    font-size: 1rem;
+    margin: 0;
+    align-self: center;
+  }
+
+  .plan-price {
+    color: hsl(213, 96%, 18%);
+    font-family: UbuntuBold;
+  }
+
+  .addons-summary {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+
+  .addon-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+  }
+
+  .addon-price-summary {
+    color: hsl(213, 96%, 18%);
+    font-family: UbuntuMedium;
+  }
+
+  .total-container {
+    display: grid;
+    grid-template-columns: 1.6fr 0.4fr;
+    padding: 5% 5% 0 5%;
+  }
+
+  .total-price {
+    color: hsl(243, 100%, 62%);
+    font-family: UbuntuBold;
+  }
+}

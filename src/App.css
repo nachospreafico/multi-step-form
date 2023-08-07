@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: UbuntuBold;
+  src: url("./assets/fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: UbuntuMedium;
+  src: url("./assets/fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: UbuntuReg;
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+h1 {
+  font-family: UbuntuBold;
+  color: hsl(213, 96%, 18%);
+}
+
+p {
+  font-family: UbuntuReg;
+  color: hsl(231, 11%, 63%);
+}
+
+@media only screen and (max-width: 480px) {
+  .app-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .counter-wrapper {
+    background-image: url("./assets/images/bg-sidebar-mobile.svg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    display: grid;
+    position: relative;
+  }
+
+  .step-counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    top: 20%;
+  }
+
+  .step {
+    border: solid 1px #bfe1fb;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: #bfe1fb;
+    font-family: UbuntuBold;
+    background-color: transparent;
+  }
+
+  .current {
+    background-color: #bfe1fb;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .form-wrapper {
+    background-color: #eef5ff;
+    position: relative;
+    height: 70vh;
+  }
+
+  .buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3%;
+  }
+
+  .back-btn {
+    background: transparent;
+    border: none;
+    font-family: UbuntuMedium;
+    color: hsl(231, 11%, 63%);
+    justify-self: start;
+    padding: 5% 7% 5% 7%;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .next-btn {
+    justify-self: end;
+    background-color: hsl(213, 96%, 18%);
+    color: #bfe1fb;
+    border: 0;
+    font-family: UbuntuMedium;
+    padding: 5% 7% 5% 7%;
+    border-radius: 5px;
+  }
+}

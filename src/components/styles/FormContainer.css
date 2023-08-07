@@ -1,0 +1,16 @@
+@media only screen and (max-width: 480px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: absolute;
+    background-color: white;
+    width: 90vw;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    padding: 5%;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+}

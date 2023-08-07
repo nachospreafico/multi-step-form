@@ -1,0 +1,109 @@
+@media only screen and (max-width: 480px) {
+  #step-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    font-family: UbuntuMedium;
+  }
+
+  #step-2 h1 {
+    margin: 0;
+  }
+
+  #step-2 > p {
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+
+  .billing-option-container {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    padding: 3%;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    margin-bottom: 3%;
+  }
+
+  .selected {
+    background-color: #f8f9fe;
+    border: solid 1px #514c97;
+  }
+
+  .billing-option {
+    justify-self: start;
+    align-self: center;
+    display: grid;
+  }
+
+  .plan-img {
+    margin-right: 20%;
+  }
+
+  .billing-option h3 {
+    align-self: end;
+    margin: 0;
+    font-family: UbuntuBold;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .billing-option p {
+    align-self: start;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .months-free {
+    font-family: UbuntuMedium;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .billing-slider {
+    display: grid;
+    grid-template-columns: 0.4fr 0.2fr 0.4fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #f8f9fe;
+    border-radius: 10px;
+  }
+
+  .slider-monthly {
+    justify-self: end;
+  }
+
+  .slider-yearly {
+    justify-self: start;
+  }
+
+  .slider-container {
+    background-color: hsl(213, 96%, 18%);
+    height: 50%;
+    width: 70%;
+    border-radius: 25px;
+    display: grid;
+    position: relative;
+  }
+
+  .slider-left {
+    background-color: white;
+    height: 20px;
+    align-self: center;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8%;
+    transition: 0.5s;
+  }
+
+  .slider-right {
+    background-color: white;
+    height: 20px;
+    align-self: center;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 8%;
+    transition: 0.5s;
+  }
+}
