@@ -107,3 +107,117 @@
     transition: 0.5s;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  #step-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr auto auto;
+  }
+
+  #step-2 > h1 {
+    height: fit-content;
+    margin: 0;
+  }
+
+  #step-2 > p {
+    margin: 0;
+    font-family: UbuntuMedium;
+  }
+
+  .billing-options-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .billing-option-container {
+    padding: 8%;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    height: fit-content;
+  }
+
+  .selected {
+    background-color: #f8f9fe;
+    border: solid 1px #514c97;
+  }
+
+  .billing-option-container:hover {
+    border-color: hsl(213, 96%, 18%);
+    cursor: pointer;
+  }
+
+  .plan-img {
+    margin-bottom: 20%;
+  }
+
+  .billing-option > h3,
+  .billing-option > p {
+    margin: 0;
+  }
+
+  .billing-option > h3 {
+    font-family: UbuntuMedium;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .billing-option > p {
+    font-family: UbuntuReg;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .billing-slider {
+    display: grid;
+    grid-template-columns: 0.4fr 0.2fr 0.4fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #f8f9fe;
+    border-radius: 10px;
+    height: 50%;
+    box-sizing: border-box;
+  }
+
+  .slider-monthly {
+    justify-self: end;
+  }
+
+  .slider-yearly {
+    justify-self: start;
+  }
+
+  .slider-container {
+    background-color: hsl(213, 96%, 18%);
+    height: 50%;
+    width: 70%;
+    border-radius: 25px;
+    display: grid;
+    position: relative;
+  }
+
+  .slider-left {
+    background-color: white;
+    height: 20px;
+    align-self: center;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8%;
+    transition: 0.5s;
+  }
+
+  .slider-right {
+    background-color: white;
+    height: 20px;
+    align-self: center;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 8%;
+    transition: 0.5s;
+  }
+}

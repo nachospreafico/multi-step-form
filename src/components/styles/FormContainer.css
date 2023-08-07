@@ -14,3 +14,18 @@
     border-radius: 15px;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+}
