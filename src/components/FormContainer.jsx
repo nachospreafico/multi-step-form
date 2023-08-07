@@ -7,9 +7,16 @@ import FormStep5 from "./FormStep5";
 
 import "./styles/FormContainer.css";
 
-const FormContainer = ({ step, input, setInput }) => {
+const FormContainer = ({
+  step,
+  input,
+  setInput,
+  plan,
+  setPlan,
+  isMobileScreen,
+}) => {
   const [monthly, setMonthly] = useState(true);
-  const [plan, setPlan] = useState({ id: 1, price: 9 });
+
   const [addons, setAddons] = useState({
     onlineServices: false,
     largerStorage: false,
@@ -60,7 +67,7 @@ const FormContainer = ({ step, input, setInput }) => {
           plan={plan}
         />
       )}
-      {step === 5 && <FormStep5 />}
+      {step === 5 && <FormStep5 isMobileScreen={isMobileScreen} />}
     </form>
   );
 };

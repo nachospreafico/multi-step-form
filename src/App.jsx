@@ -12,6 +12,8 @@ function App() {
     phone: { value: "", isEmpty: true },
   });
 
+  const [plan, setPlan] = useState({ id: 1, price: 9 });
+
   const [isMobileScreen, setIsMobileScreen] = useState(false);
 
   useEffect(() => {
@@ -19,13 +21,10 @@ function App() {
       setIsMobileScreen(window.innerWidth < 480);
     };
 
-    // Initial check on component mount
     handleResize();
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -85,7 +84,14 @@ function App() {
         </div>
         <div className="form-btn-container">
           <div className="form-wrapper">
-            <FormContainer step={step} input={input} setInput={setInput} />
+            <FormContainer
+              step={step}
+              input={input}
+              setInput={setInput}
+              plan={plan}
+              setPlan={setPlan}
+              isMobileScreen={isMobileScreen}
+            />
           </div>
           <div className="buttons-container">
             <button

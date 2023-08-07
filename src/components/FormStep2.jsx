@@ -19,7 +19,6 @@ const FormStep2 = ({ monthly, setMonthly, setPlan, planId }) => {
             planId === 1 ? "selected" : ""
           }`}
           onClick={() => {
-            console.log("planId: ", planId);
             setPlan({ id: 1, price: 9 });
           }}
         >

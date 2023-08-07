@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   #step-3 {
     display: grid;
     grid-template-columns: 1fr;
@@ -23,6 +23,82 @@
     border-radius: 5px;
     padding: 3%;
     margin-bottom: 3%;
+  }
+
+  .addon-option-container h3,
+  .addon-option-container p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .addon-option-container h3 {
+    color: hsl(213, 96%, 18%);
+    font-family: UbuntuBold;
+  }
+
+  .addon-option-container p {
+    font-size: 0.8rem;
+    font-family: UbuntuMedium;
+  }
+
+  .addon-check-container {
+    width: 20px;
+    height: 20px;
+    padding: 1%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border: solid 1px hsl(229, 24%, 87%);
+  }
+
+  .checked {
+    background-color: hsl(243, 100%, 62%);
+  }
+
+  .checked-container {
+    background-color: #f8f9fe;
+    border: solid 1px #514c97;
+  }
+
+  .addon-price {
+    color: hsl(243, 100%, 62%);
+    font-family: UbuntuMedium;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #step-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #step-3 h1 {
+    margin: 0;
+  }
+
+  #step-3 > p {
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+
+  .addon-option-container {
+    display: grid;
+    grid-template-columns: 0.5fr 3.75fr 1fr;
+    align-items: center;
+    font-family: UbuntuReg;
+    border: solid 1px hsl(229, 24%, 87%);
+    border-radius: 5px;
+    padding: 3%;
+    margin-bottom: 3%;
+  }
+
+  .addon-option-container:hover {
+    cursor: pointer;
+    border-color: hsl(213, 96%, 18%);
   }
 
   .addon-option-container h3,

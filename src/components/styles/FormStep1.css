@@ -1,4 +1,4 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   #step-1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -50,5 +50,60 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1024px) {
+  #step-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.22fr 0.22fr 0.22fr auto;
+  }
+
+  #step-1 > h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  #step-1 > p {
+    margin-top: 0;
+  }
+
+  .form-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 2%;
+  }
+
+  .form-item label {
+    font-size: 14px;
+    color: hsl(213, 96%, 18%);
+    margin: 0;
+    font-family: UbuntuMedium;
+  }
+
+  .form-item input {
+    font-family: UbuntuMedium;
+    padding-left: 2%;
+    color: hsl(213, 96%, 18%);
+    border-radius: 5px;
+    border: 1px solid hsl(231, 11%, 63%);
+    padding: 2%;
+  }
+
+  .form-item input::placeholder {
+    color: hsl(231, 11%, 63%);
+  }
+
+  .error-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-empty {
+    margin: 0;
+    font-size: 14px;
+    align-self: end;
+    justify-self: end;
+    color: tomato;
+    font-family: UbuntuMedium;
+  }
 }

@@ -27,7 +27,7 @@ p {
   color: hsl(231, 11%, 63%);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1023px) {
   .app-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -106,9 +106,14 @@ p {
     padding: 5% 7% 5% 7%;
     border-radius: 5px;
   }
+
+  .next-btn:hover {
+    background-color: hsl(228, 100%, 84%);
+    color: white;
+  }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .app-container {
     display: grid;
     grid-auto-columns: 1fr;
@@ -213,6 +218,7 @@ p {
     height: fit-content;
     border-radius: 5px;
     font-size: 1rem;
+    cursor: pointer;
   }
 
   .back-btn {

@@ -44,6 +44,7 @@ const FormStep1 = ({ input, setInput }) => {
           required
           style={input.name.isEmpty ? { border: "solid 1px tomato" } : null}
           type="text"
+          value={input.name.value}
           placeholder="e.g. Stephen King"
           onChange={handleNameInput}
         ></input>
@@ -59,8 +60,9 @@ const FormStep1 = ({ input, setInput }) => {
           id="email"
           required
           type="email"
+          value={input.email.value}
           placeholder="e.g. stephenking@lorem.com"
-          style={input.name.isEmpty ? { border: "solid 1px tomato" } : null}
+          style={input.email.isEmpty ? { border: "solid 1px tomato" } : null}
           onChange={handleEmailInput}
         ></input>
       </div>
@@ -75,8 +77,9 @@ const FormStep1 = ({ input, setInput }) => {
           id="phone-number"
           required
           type="tel"
+          value={input.phone.value}
           placeholder="e.g. +1 234 567 890"
-          style={input.name.isEmpty ? { border: "solid 1px tomato" } : null}
+          style={input.phone.isEmpty ? { border: "solid 1px tomato" } : null}
           onChange={handlePhoneInput}
         ></input>
       </div>
